@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html>
 <head>
     <meta charset='utf-8'>
@@ -15,5 +16,39 @@
         <hr/>
         <p>By Misaka-L <a href="https://github.com/Misaka-L/">Github</a></p>
     </div>
+=======
+<!-- 网页设计完全是个外行
+把 html / css 忘的干干净净那种
+所以随便吐槽这个网页吧 ———— 猫猫 Misaka-L -->
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.staticfile.org/marked/2.1.3/marked.min.js"></script>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="markdown.css"/>
+    <title>Misaka-L/README.md</title>
+</head>
+<body>
+    <div class="main">
+        <div class="card head-image">
+            <div class="card" style="position: absolute; right: 1rem; bottom: 1rem;">
+                <a href="https://www.pixiv.net/artworks/56329639">#hangmoon 無題 - Hang 的插画</a>
+            </div>
+        </div>
+        <div class="card" id="markdown">
+            <h1 style="text-align: center;">Loading... `(*>﹏<*)′</h1>
+        </div>
+    </div>
+    <script>
+        fetch('https://cdn.jsdelivr.net/gh/Misaka-L/Misaka-L@master/README.md').then(response => {
+            var markdown = response.text().then(text => {
+                var markdownElement = document.getElementById('markdown');
+                markdownElement.innerHTML = marked(text);
+            })
+        });
+    </script>
+>>>>>>> cceec90 (new web!)
 </body>
 </html>

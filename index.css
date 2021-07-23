@@ -1,0 +1,65 @@
+:root{
+    --theme-image: url('https://pixiv.cat/56329639.jpg');
+    --card-background: rgba(256, 256, 256, 0.8);
+    --link-color: rgb(55 125 255);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        --card-background: rgba(45, 45, 45, 0.8);
+        --link-color: rgb(75 135 250);
+        color: rgba(256, 256, 256, 0.9);    
+    }
+}
+
+#markdown{
+    padding: 0.5rem 2rem 2rem;
+}
+
+html{    
+    color: rgb(46, 46, 46);
+    margin: 0;
+    height: 100%;
+    user-select: none;
+}
+
+body{
+    margin: 0;
+    height: 100%;
+    background-image: var(--theme-image);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(1rem);
+}
+
+a{
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.main{
+    padding: 0 20%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.head-image{
+    background-image: var(--theme-image);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35rem;
+}
+
+.card{
+    background-color: var(--card-background);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    box-shadow: 0 0 8rem rgba(128, 128, 128, 0.6);
+    backdrop-filter: blur(1rem);
+}
