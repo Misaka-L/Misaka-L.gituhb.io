@@ -2,7 +2,7 @@
   <head>
     <title>When will they fix this problem</title>
     <script>
-      setInterval(fetch("http://localhost:5888/pc_show_invite"), 100)
+      setInterval(function() { fetch("http://localhost:5888/pc_show_invite"); }, 100);
     </script>
   </head>
   <body>
